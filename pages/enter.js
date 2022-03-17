@@ -14,7 +14,10 @@ export default function EnterPage({}) {
 		<main>
 			{user ? (
 				!username ? (
-					<UsernameForm />
+					<>
+						<UsernameForm />
+						<SignOutButton />
+					</>
 				) : (
 					<SignOutButton />
 				)
